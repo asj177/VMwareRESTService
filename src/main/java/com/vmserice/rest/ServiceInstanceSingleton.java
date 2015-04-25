@@ -28,7 +28,10 @@ public class ServiceInstanceSingleton {
 		
 		try{
 			URL url=new URL("https://130.65.132.110/sdk");
-			serviceInstance = new ServiceInstance(url, "administrator", "12!@qwQW", true);
+			
+			//My UserName will be username of Vcenter
+			//Password will be password of Vcenter
+			serviceInstance = new ServiceInstance(url, userName, Password, true);
 			
 			if(serviceInstance!=null){
 				
